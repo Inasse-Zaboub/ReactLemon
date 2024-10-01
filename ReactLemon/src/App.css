@@ -1,0 +1,80 @@
+body {
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: url("./assets/background.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 10;
+}
+
+.hero-header {
+  margin-bottom: 3rem;
+}
+
+.hero-header h1 {
+  line-height: 0.4;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 8rem;
+  color: #f4cf15;
+  text-shadow: -3px -3px 0 #000,
+    /* Top-left shadow (black border) */ 3px -3px 0 #000,
+    /* Top-right shadow */ -3px 3px 0 #000,
+    /* Bottom-left shadow */ 3px 3px 0 #000; /* Bottom-right shadow */
+}
+
+
+.hero-header h1 span {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  text-shadow: none;
+}
+
+.hero-desc {
+  margin-bottom: 5rem;
+}
+
+.hero-desc p {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+.hero-button button {
+  background-color: #f4cf15;
+  font-family: "Poppins";
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 7px;
+  height: 3rem;
+  width: 10rem;
+  border: 1px white solid
+}
+
